@@ -1,0 +1,126 @@
+body {
+  background: url(http://subtlepatterns.com/patterns/scribble_light.png); }
+
+.col-md-moose {
+  width: 100%; }
+
+#masonry-grid {
+  margin: 0 auto; }
+
+.grid-item {
+  width: 25%;
+  -webkit-box-shadow: 9px 13px 26px 1px #2e2c2e;
+  -moz-box-shadow: 9px 13px 26px 1px #2e2c2e;
+  box-shadow: 9px 13px 26px 1px #2e2c2e; }
+
+.grid-sizer {
+  width: 5%; }
+
+.grid-item img {
+  width: 100%;
+  padding: 1em; }
+
+.content-block {
+  padding-bottom: 2rem;
+  padding-right: 1rem; }
+  .content-block .btn {
+    border-radius: 0;
+    margin-top: 1rem; }
+  .content-block p {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1em; }
+
+@media screen and (max-width: 1200px) {
+  /* 10 columns for larger screens */
+  .grid-sizer {
+    width: 5%; }
+
+  .grid-item {
+    width: 25%; }
+
+  .col-md-moose {
+    width: 100%; }
+
+  .sidebar-fixed {
+    float: none;
+    width: 100%;
+    margin-left: 1em; }
+
+  .widget-sidebar {
+    width: 30%;
+    float: left;
+    margin-right: 2em; } }
+@media screen and (max-width: 992px) {
+  /* 10 columns for larger screens */
+  .grid-sizer {
+    width: 8%; }
+
+  .grid-item {
+    width: 32%; }
+
+  #masonry-grid {
+    margin-left: 4.5rem; }
+
+  .col-md-moose {
+    width: 100%; } }
+@media screen and (max-width: 767px) {
+  /* 10 columns for larger screens */
+  .grid-sizer {
+    width: 8%; }
+
+  .grid-item {
+    width: 32%; }
+
+  .col-md-moose {
+    width: 100%; }
+
+  .sidebar-fixed {
+    float: none;
+    width: 100%;
+    margin: 0 auto; }
+
+  .widget-sidebar {
+    width: 100%;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.2); } }
+@media screen and (max-width: 600px) {
+  /* 10 columns for larger screens */
+  .grid-sizer {
+    width: 5%; }
+
+  .grid-item {
+    width: 50%; }
+
+  #masonry-grid {
+    margin: 0 auto; }
+
+  .col-md-moose {
+    width: 100%; }
+
+  .sidebar-fixed {
+    float: none;
+    width: 100%;
+    margin: 0 auto; } }
+@media screen and (max-width: 480px) {
+  /* 10 columns for larger screens */
+  .grid-item {
+    width: 100%; }
+
+  #masonry-grid {
+    margin: 0 auto; }
+
+  .col-md-moose {
+    width: 100%; }
+
+  .sidebar-fixed {
+    float: none;
+    width: 100%;
+    margin: 0 auto; }
+
+  .widget-sidebar {
+    width: 100%;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.2); } }
+
+/*# sourceMappingURL=style-masonry.css.map */
