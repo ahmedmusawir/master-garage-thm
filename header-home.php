@@ -34,12 +34,24 @@
 			?>
 		</div>
 
+		<section class="top-header-bar">
+			<div class="container">
+				<article class="form-bar-content-holder">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+						<div class="form-bar-left-block text-center">
+							<h4 class="headline">For Your FREE in Garage Estimate, Call Jarrett Today (813) 541-0002 </h4>
+							<!-- <img class="img-responsive center-block" src="/wp-content/uploads/2016/06/Screen-Shot-2016-06-24-at-2.43.19-PM.png" alt=""> -->
+						</div>
+					</div>	
+				</article>
+			</div>
+		</section>
 
 	
 		<div class="navbar-container">
-			<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<nav class="navbar navbar-inverse" role="navigation">
 	
-	  		  <div class="container-fluid">
+	  		  <div class="container">
 
 			    <!-- Brand and toggle get grouped for better mobile display -->
 			    <div class="navbar-header">
@@ -93,55 +105,10 @@
 	<?php 
 		// $home_page_header_slider = get_field( 'home_page_header_slider', 6 );
 	?>	
-	<img src="/wp-content/uploads/2017/08/garage-1920x800.jpg" alt="">
 	
 	<header id="front-pg-header">
 
-		<?php if ( is_front_page() ) : ?>
-			
-			<?php echo $home_page_header_slider; ?>
-
-			<section class="top-form-bar">
-				<div class="container">
-					<article class="form-bar-content-holder">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-							<div class="form-bar-left-block">
-								<h2 class="form-bar-left-text">SIGN UP to receive the 7 SECRET Tips to creating your Best Bod Ever!</h2>
-								<!-- <img class="img-responsive center-block" src="/wp-content/uploads/2016/06/Screen-Shot-2016-06-24-at-2.43.19-PM.png" alt=""> -->
-							</div>
-							<div class="form-bar-right-block">
-								<div class="form-bar-right-form-holder">
-									
-								
-									<?php echo do_shortcode( '[convertkit form=4919997]' ); ?>
-
-								</div>
-							</div>
-						</div>	
-					</article>
-				</div>
-			</section>
-
-
-		<?php elseif ( is_single() || is_home() || is_archive() || is_search() || is_404() ) : ?>
-
-			<section class="dr-nia-single-post-header">
-		
-				<h2><?php wp_title(); ?></h2>
-				
-			</section>
-
-		<?php else : ?>
-
-			<section class="dr-nia-page-header">
-		
-				<h1><?php wp_title(); ?></h1>
-				
-			</section>
-
-		<?php endif; ?>
-	
-	
+		<img src="/wp-content/uploads/2017/08/top-hero-img-1920x800.jpg" alt="">
 
 	</header>
 	

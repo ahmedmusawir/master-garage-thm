@@ -1,17 +1,21 @@
-body {
-  background: url(http://subtlepatterns.com/patterns/scribble_light.png); }
-
 .col-md-moose {
   width: 100%; }
+  .col-md-moose #grid-filter .btn {
+    padding: 1.5rem 4rem;
+    box-shadow: 2px 2px 20px #a6a6a6; }
+  .col-md-moose #grid-filter .active {
+    background-color: #be0000;
+    color: white; }
 
 #masonry-grid {
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 5rem; }
 
 .grid-item {
   width: 25%;
-  -webkit-box-shadow: 9px 13px 26px 1px #2e2c2e;
-  -moz-box-shadow: 9px 13px 26px 1px #2e2c2e;
-  box-shadow: 9px 13px 26px 1px #2e2c2e; }
+  -webkit-box-shadow: 9px 13px 26px 1px rgba(46, 44, 46, 0.5);
+  -moz-box-shadow: 9px 13px 26px 1px rgba(46, 44, 46, 0.5);
+  box-shadow: 9px 13px 26px 1px rgba(46, 44, 46, 0.5); }
 
 .grid-sizer {
   width: 5%; }

@@ -43,8 +43,14 @@ jQuery(document).ready(function($) {
 
 			jQuery("#grid-filter .category").on("click", function() {
 
-				console.log('clicked');
-				console.log($(this).val());
+				// console.log('clicked');
+				// console.log(jQuery(this));
+				// console.log(jQuery(this).data('value'));
+
+				var button = jQuery('#grid-filter a').removeClass('active');
+				// console.log(button);	
+
+				jQuery(this).addClass('active');
 
 				group = jQuery(this).data('value');
 

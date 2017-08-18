@@ -266,7 +266,7 @@ get_header('contact'); ?>
 			<div class="col-sm-6 col-md-6 col-lg-6">
 				<article class="left-text-content">
 
-					<h2 class="headline-social">Get Social</h2>
+					<h2 class="headline-social"><?php the_field('headline_get_social'); ?></h2>
 					<ul class="contact-social">
 
 					<?php if( get_field('social_icon_1') ): ?>

@@ -38,19 +38,20 @@
 			<div class="container">
 				<article class="form-bar-content-holder">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-						<div class="form-bar-left-block text-center">
-							<h4 class="headline">For Your FREE in Garage Estimate, Call Jarrett Today (813) 541-0002 </h4>
+						<div class="form-bar-left-block">
+							<h2 class="form-bar-left-text">SIGN UP to receive the 7 SECRET Tips to creating your Best Bod Ever!</h2>
 							<!-- <img class="img-responsive center-block" src="/wp-content/uploads/2016/06/Screen-Shot-2016-06-24-at-2.43.19-PM.png" alt=""> -->
 						</div>
 					</div>	
 				</article>
 			</div>
 		</section>
+
 	
 		<div class="navbar-container">
 			<nav class="navbar navbar-inverse" role="navigation">
 	
-	  		  <div class="container">
+	  		  <div class="container-fluid">
 
 			    <!-- Brand and toggle get grouped for better mobile display -->
 			    <div class="navbar-header">
@@ -101,7 +102,10 @@
 
 	<div id="content" class="site-content">
 
-	<!-- <img src="/wp-content/uploads/2017/08/garage-1920x800.jpg" alt=""> -->
+	<?php 
+		// $home_page_header_slider = get_field( 'home_page_header_slider', 6 );
+	?>	
+	<img src="/wp-content/uploads/2017/08/top-hero-img-1920x800.jpg" alt="">
 	
 	<header id="front-pg-header">
 
@@ -135,7 +139,7 @@
 
 			<section class="dr-nia-single-post-header">
 		
-				<h1><?php wp_title(); ?></h1>
+				<h2><?php wp_title(); ?></h2>
 				
 			</section>
 

@@ -105,52 +105,12 @@
 	
 	<header id="front-pg-header">
 
-		<?php if ( is_front_page() ) : ?>
+	<!-- 	<section class="dr-nia-contact-header">
+	
+			<h1><?php wp_title(); ?></h1>
 			
-			<?php echo $home_page_header_slider; ?>
-
-			<section class="top-form-bar">
-				<div class="container">
-					<article class="form-bar-content-holder">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-							<div class="form-bar-left-block">
-								<h2 class="form-bar-left-text">SIGN UP to receive the 7 SECRET Tips to creating your Best Bod Ever!</h2>
-								<!-- <img class="img-responsive center-block" src="/wp-content/uploads/2016/06/Screen-Shot-2016-06-24-at-2.43.19-PM.png" alt=""> -->
-							</div>
-							<div class="form-bar-right-block">
-								<div class="form-bar-right-form-holder">
-									
-								
-									<?php echo do_shortcode( '[convertkit form=4919997]' ); ?>
-
-								</div>
-							</div>
-						</div>	
-					</article>
-				</div>
-			</section>
-
-
-		<?php elseif ( is_single() || is_home() || is_archive() || is_search() || is_404() ) : ?>
-
-			<section class="dr-nia-single-post-header">
-		
-				<h1><?php wp_title(); ?></h1>
-				
-			</section>
-
-		<?php else : ?>
-
-			<section class="dr-nia-page-header">
-		
-				<h1><?php wp_title(); ?></h1>
-				
-			</section>
-
-		<?php endif; ?>
-	
-	
-
+		</section>
+ -->
 	</header>
 	
 

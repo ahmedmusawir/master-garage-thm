@@ -34,11 +34,11 @@ get_header(); ?>
 
 				    </select> -->
 
-				    <a class="btn btn-default category" data-value="">All Category</a>
-				    <a class="btn btn-default category" data-value="one">Github</a>
-				    <a class="btn btn-default category" data-value="two">Nature</a>
-				    <a class="btn btn-default category" data-value="three">Earth</a>
-				    <a class="btn btn-default category" data-value="four">Planets</a>
+				    <a class="btn btn-default category active" data-value="">ALL CATEGORY</a>
+				    <a class="btn btn-default category" data-value="one">LAMBORGHINI</a>
+				    <a class="btn btn-default category" data-value="two">FERRARI</a>
+				    <a class="btn btn-default category" data-value="three">PROSCHE</a>
+				    <a class="btn btn-default category" data-value="four">HONDA</a>
 
 				    <br> <hr>
 
