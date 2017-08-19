@@ -108,7 +108,7 @@
 	
 	<header id="front-pg-header">
 
-		<img src="/wp-content/uploads/2017/08/top-hero-img-1920x800.jpg" alt="">
+		<img src="/wp-content/uploads/2017/08/top-hero-img-1920x1000.jpg" alt="">
 
 	</header>
 	

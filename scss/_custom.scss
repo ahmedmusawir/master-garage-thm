@@ -7,7 +7,7 @@ $brand-primary:  #5FC5BF;
 // $brand-primary: #FF8300;
 // $brand-primary: lighten( #be8706, 10% );
 // $tiana-primary: #383D66;
-$tiana-primary: $smoke;
+$tiana-primary: $imb-primary;
 $tiana-black: black;
 $tiana-white: $smoke;
 $tiana-teal: #F3918D; //this is tylor red
@@ -25,26 +25,35 @@ $alyssa-green: #abd9ce;
 @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css);
 // @import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700italic,400italic,700);
 // @import url(https://fonts.googleapis.com/css?family=Bevan);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300,200,100);
+// @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300,200,100);
 // @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 // @import url(https://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic);
 // @import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic);
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+
 
 html { 
  
 	// display: none;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 
 }
 
 body {
 
 	// font-family: 'Muli', sans-serif;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	// padding-top: 72px;
 
 	h1, h2, h3, h4, h5, h6 {
-		// color: $tiana-primary;
+		color: $imb-primary;
+	}
+
+	a {
+		text-decoration: none !important;
+		&:hover {
+			text-decoration: none !important;
+		}
 	}
 
 	// @media ( min-width: 1200px ) and ( max-width: 1305px ) {
@@ -67,7 +76,7 @@ body {
 
 #content {
 
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	background: url() no-repeat center center fixed; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
@@ -141,7 +150,7 @@ body {
 	background-color: $smoke;
 	// box-shadow: 2px 2px 8px $gray-light;
 	margin-bottom: 0rem;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 
 	.header-social {
 		padding-top: 1rem;
@@ -300,18 +309,34 @@ img {
 =            Home page style            =
 =======================================*/
 
-.above-blog-block-1 {
+#front-pg-header {
+	// position: relative;
+	// border: 1rem dotted red;
+	// min-height: 800px;
 
+	// img {
+	// 	position: fixed;
+	// 	top: 0;
+	// 	z-index: -1;
+	// }
+}
+
+.above-blog-block-1 {
+	padding-top: 3rem;
+	padding-bottom: 5rem;
+
+	.btn {
+		margin-top: 3rem;
+		padding: 1.5rem 5rem;
+		border-radius: 50px;
+	}
 	
 }
 
 .above-blog-block-2 {
-
-	// border: 1px solid blue;
+	padding-bottom: 5rem;
 	min-height: 400px;
-	// background-color: darken( $tiana-light-gray, 3% );
-	// @include background(linear-gradient(black, white) left repeat);
-	background-color: lighten( $alyssa-gray-light, 0% );	
+	background-color: lighten( $smoke, 0% );	
 
 	.wrapper {
 
@@ -328,7 +353,7 @@ img {
 			}
 		}
 
-		h2 {
+		.headline {
 			color: darken( $tiana-primary, 20% );
 			font-size: 3.5rem;
 			font-weight: 500;
@@ -337,165 +362,113 @@ img {
 			position: relative;
 
 
-			// &:before {
-			//   content : "";
-			//   position: absolute;
-			//   left    : 30%;
-			//   bottom  : 0;
-			//   height  : 1px;
-			//   width   : 40%; 
-			// 	border-bottom: .4rem solid $tiana-primary;
-			// }
+			&:before {
+			  content : "";
+			  position: absolute;
+			  top 	  : 100%; 
+			  left    : 45%;
+			  bottom  : 0;
+			  height  : 1px;
+			  width   : 10%; 
+			  border-bottom: .8rem solid $tiana-primary;
+			}
 
 		}
-		h3 {
-			font-style: italic;
-			font-weight: 600;
-			color: gray;
-		}
 
-		.icon-content {
-
+		.text-only {
 			padding-top: 5rem;
-
-			img {
-				width: 80%;
-				margin-left: 12%;
-			}
-			.img-left {
-				// margin-right: -2rem;
-			}
-			.img-right {
-				// margin-left: -2rem;
-			}
-			.text-content {
-				text-align: center;
-				font-size: 2rem;
-				font-weight: 400;
-				font-style: italic;
-				padding-bottom: 10rem;
-			}
+			padding-bottom: 5rem;
+			font-size: 2rem;
 		}
 
-		figure {
-			@include transition(all 1s ease-in-out);
+		.subheadline {
+			color: darken( $tiana-primary, 20% );
+			font-size: 2.5rem;
+			font-weight: 500;
+			padding-top: 1.5rem;
+			padding-bottom: 1.8rem;
+			position: relative;
 
-			&:hover {
-				margin-top: -25px;
+
+			&:before {
+			  content : "";
+			  position: absolute;
+			  top 	  : 100%; 
+			  left    : 40%;
+			  bottom  : 0;
+			  height  : 1px;
+			  width   : 20%; 
+			  border-bottom: .8rem solid $tiana-primary;
 			}
-		}		
+
+		}
+		.subtext-only {
+			padding-top: 5rem;
+			padding-bottom: 5rem;
+			font-size: 1.5rem;
+		}	
+
+		.row {
+			.btn {
+				margin-top: 3rem;
+				padding: 1.5rem 5rem;
+				border-radius: 50px;
+				color: $smoke;
+			}			
+		}			
+	
 	}
 }
 
-#front-page-blog-block {
-	.block-title {
-		padding-top: 3rem;
-		padding-bottom: 3rem;
-		font-size: 3.5rem;
-		font-weight: 500;
-		text-align: center;
-		color: $tiana-primary;
-	}
-}
 
 .below-blog-block-1 {
-	// border: 1rem solid yellow;
 	min-height: 400px;	
-	background-color: $tiana-teal;
+	// padding-bottom: 5rem;
+	margin-bottom: 10rem;
 
 	.wrapper {
-	// border: 1rem solid blue;
-		padding-top: 5rem;
-		padding-bottom: 5rem;
 
-		h2 {
-			color: white;
+		.headline {
+			color: darken( $tiana-primary, 20% );
 			font-size: 3.5rem;
-			text-align: center;
+			font-weight: 500;
+			padding-top: 4.5rem;
+			padding-bottom: 1.8rem;
+			position: relative;
+
+
+			&:before {
+			  content : "";
+			  position: absolute;
+			  top 	  : 100%; 
+			  left    : 45%;
+			  bottom  : 0;
+			  height  : 1px;
+			  width   : 10%; 
+			  border-bottom: .8rem solid $tiana-primary;
+			}
+
 		}
-		h1 {
-			color: $tiana-primary;
-			text-align: center;
-			font-size: 3.5rem;
-			font-weight: 700;
+
+		.text-only {
+			padding-top: 5rem;
+			padding-bottom: 5rem;
+			font-size: 2rem;
 		}
 
 		.icon-content {
-			figure {
-				
-				iframe {
-					padding-bottom: 5rem;
+			img {
+				&:hover {
+					opacity: .5;
 				}
 			}
 		}
-
-		@media ( max-width: 768px ) {
-
-			h1 {
-				font-size: 3rem;
-			}
-			h2 {
-				font-size: 3rem;
-			}
-			.icon-content {
-				figure {
-					
-					img {
-						width: 90%;
-					}
-				}
-			}
-
-		}
-
+	
 	}
 
 }
 
-.below-blog-block-2 {
-	// min-height: 400px;	
-	padding-top: 2rem;
 
-	.btn-holder {
-		padding-top: 4rem;
-		padding-bottom: 7rem;
-		// border: 1rem solid green;
-	}	
-
-	h2 {
-		text-align: center;
-		color: $tiana-primary;
-		font-size: 3.5rem;
-		font-weight: 700;
-		padding-top: 4rem;
-		padding-bottom: 1.8rem;
-		position: relative;
-
-
-		&:before {
-		  content : "";
-		  position: absolute;
-		  left    : 30%;
-		  bottom  : 0;
-		  height  : 1px;
-		  width   : 40%;  /* or 100px */
-			border-bottom: .4rem solid $tiana-teal;
-		}
-
-	}
-	.icon-content {
-		padding-top: 3rem;
-	}
-
-	figure {
-		@include transition(all 1s ease-in-out);
-
-		&:hover {
-			margin-top: -25px;
-		}
-	}
-
-}
 /*=====  End of Home page style END  ======*/
 
 /**
@@ -591,7 +564,7 @@ img {
 		font-weight: 800;
 		padding-top: 6rem;
 		// border-bottom: 1px solid $tiana-primary;
-		color: darken( $tiana-primary, 0% );
+		color: darken( $smoke, 0% );
 	}	
 }
 
@@ -611,7 +584,7 @@ img {
 		font-size: 4.5rem;
 		font-weight: 800;
 		padding-top: 6rem;
-		color: darken( $tiana-primary, 0% );
+		color: darken( $smoke, 0% );
 	}	
 }
 
@@ -639,12 +612,12 @@ img {
 	margin-top: 5rem;
 	margin-right: 0rem;
 	margin-left: .15rem;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	
 	.entry-header {
 
 		h2 {
-			font-family: 'Raleway', sans-serif;
+			font-family: 'Quicksand', sans-serif;
 			text-transform: uppercase;
 			
 			font-size: 2.2rem;
@@ -709,7 +682,7 @@ img {
 		padding-right: 1.5rem;
 		padding-top: 2rem;
 		p {
-			font-family: 'Raleway', sans-serif;
+			font-family: 'Quicksand', sans-serif;
 
 			font-size: 1.5rem;
 			font-variant: 500;
@@ -819,7 +792,7 @@ img {
 			// border: 1px solid red;
 
 		h1 {
-			font-family: 'Raleway', sans-serif;
+			font-family: 'Quicksand', sans-serif;
 			font-variant: small-caps;
 			font-size: 4rem;
 			color: darken( $brand-primary, 10% );
@@ -1076,7 +1049,7 @@ img {
 	.praise-text {
 
 		p {
-			font-family: 'Raleway', sans-serif;
+			font-family: 'Quicksand', sans-serif;
 			font-size: 2rem;
 			font-weight: 300;
 			color: lighten( $tiana-gray, 25% );
@@ -1318,7 +1291,7 @@ img {
 		}
 
 		h5 {
-			color: lighten( $tiana-primary, 10% );
+			color: lighten( $smoke, 10% );
 			padding-top: 2rem;
 			padding-bottom: 2rem;
 			font-weight: 700;
@@ -1330,7 +1303,7 @@ img {
 
 			i {
 				@include transition(all 1s ease-in-out);
-				color: $tiana-primary;
+				color: $smoke;
 				padding-top: 1rem;
 				padding-bottom: 1rem;
 
@@ -1446,7 +1419,7 @@ img {
 		color: lighten( $tiana-gray, 40% );
 		padding-bottom: 2rem;
 		text-transform: uppercase;
-		font-family: 'Raleway', sans-serif;
+		font-family: 'Quicksand', sans-serif;
 
 
 	}
@@ -1496,7 +1469,7 @@ img {
 			font-size: 1.5rem;
 			padding: 1rem;
 			font-weight: 300;
-			font-family: 'Raleway', sans-serif;
+			font-family: 'Quicksand', sans-serif;
 			border-bottom: 3px solid $tiana-primary;
 			
 			@include transition(all 0.5s ease-in-out);
@@ -1677,6 +1650,48 @@ img {
 
 	}
 
+	.widget-footer-container {
+
+		.footer-icon-block {
+			// border: 1rem dotted yellow;
+			.content {
+				.icon {
+					color: $smoke;
+					float: left;
+					margin-right: 2rem;
+					width: 100px;
+					height: 100px;
+					border-radius: 50%;
+					background-color: $imb-secondary;
+
+					.fa-mobile {
+						margin-top: 1.8rem;
+						margin-left: 3.5rem;	
+					}
+					.fa-envelope {
+						margin-top: 2rem;
+						margin-left: 2.2rem;	
+					}
+					.fa-home {
+						margin-top: 2rem;
+						margin-left: 2.5rem;	
+					}
+					
+				}
+				.text-only {
+					color: $smoke;
+					// margin-bottom: -10rem;
+					p {
+						padding-top: 3rem;
+					}
+					.top-text {
+						font-weight: 900;
+					}
+				}					
+			}
+		}
+	}
+
 	.widget-footer {
 		padding-left: 0;
 
@@ -1757,7 +1772,7 @@ img {
 			}
 
 			a {
-				// font-family: 'Raleway', sans-serif !important;
+				// font-family: 'Quicksand', sans-serif !important;
 				// border: 1px solid red;
 				// font-size: 5rem;
 			}
@@ -1771,11 +1786,12 @@ img {
 	padding-bottom: 2rem;
 	background-color: $imb-secondary;
 
-	p {
-		font-size: 1.4rem;
-		font-weight: 700;
-		line-height: 1.4rem;
-		color: darken( $tiana-white, 45% );
+	.text-only {
+		color: $smoke;
+		font-size: 1.6rem;
+		font-weight: 300;
+		line-height: 1.6rem;
+		padding-top: 2rem;
 	}
 	a {
 		color: darken( $tiana-primary, 30% );

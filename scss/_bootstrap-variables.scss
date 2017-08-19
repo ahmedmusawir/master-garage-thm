@@ -4,7 +4,7 @@
 //
 // Variables
 // --------------------------------------------------
-
+$imb-primary: #740001; //maroon
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
@@ -39,7 +39,7 @@ $black       : #000000;
 // $brand-primary:         darken(#428bca, 6.5%); // #337ab7;
 // $brand-primary:  darken( #FFFC13, 30% );
 
-$brand-primary:         #5FC5BF;
+$brand-primary:         $imb-primary;
 $brand-success:         $steel;
 $brand-info:            #5bc0de;
 $brand-warning:         #f0ad4e;

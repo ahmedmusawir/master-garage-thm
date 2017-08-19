@@ -34,6 +34,17 @@
 								dynamic_sidebar( 'footer-sidebar-1' ); 
 
 							?>
+							<!-- <section class="footer-icon-block">
+								
+								<div class="content">
+									<span class="icon"><i class="fa fa-mobile fa-5x" aria-hidden="true"></i></span>
+									<div class="text-only">
+										<p> <span class="top-text"><em>Call Us Today</em></span><br>
+										(813).541.0002</p>
+									</div>
+								</div>
+
+							</section> -->
 					      
 					    </aside>
 
@@ -52,6 +63,18 @@
 								dynamic_sidebar( 'footer-sidebar-2' ); 
 
 							?>
+
+<!-- 							<section class="footer-icon-block">
+								
+								<div class="content">
+									<span class="icon"><i class="fa fa-envelope fa-4x" aria-hidden="true"></i></span>
+									<div class="text-only">
+										<p> <span class="top-text"><em>E-mail Us Today</em></span><br>
+										email@gmail.com</p>
+									</div>
+								</div>
+
+							</section>				 -->			
 					      
 					    </aside>
 
@@ -70,6 +93,18 @@
 								dynamic_sidebar( 'footer-sidebar-3' ); 
 
 							?>
+
+<!-- 							<section class="footer-icon-block">
+								
+								<div class="content">
+									<span class="icon"><i class="fa fa-home fa-4x" aria-hidden="true"></i></span>
+									<div class="text-only">
+										<p> 3433 Lithia Pinecrest Rd #126<br>
+										Valrico, FL 33596</p>
+									</div>
+								</div>
+
+							</section>			 -->				
 					      
 					    </aside>
 
@@ -107,14 +142,17 @@
 
 		</footer>
 
-			<div id="copyright" class="copyright">
-				<p class="text-center">All Rights Reserved &copy; <?php echo date('Y'); ?>. <a target="_blank" class="" href="http://tianagustafson.com/">Designed & Developed by Tianagustafson.com</a></p>
-			
+			<div id="copyright" class="copyright text-center">
+				<!-- <p class="text-center">All Rights Reserved &copy; <?php echo date('Y'); ?>. <a target="_blank" class="" href="http://tianagustafson.com/">Designed & Developed by Tianagustafson.com</a></p> -->
+				<p class="text-only">
+					To learn more about our garage fransformation services and products, or to schedule a <br>
+					<b>FREE, NO OBLIGATION</b> consultation please complete the form below or contact us by phone.
+				</p>
 				<!--==============================================================================
 				=            THIS IS FOR DEBUGGING. PLZ DISABLE WHEN READY TO PUBLISH            =
 				===============================================================================-->
 				
-				<div style="color: white"><strong>Current template:</strong> <?php echo get_current_template( true ); ?></div>
+				<!-- <div style="color: white"><strong>Current template:</strong> <?php echo get_current_template( true ); ?></div> -->
 				
 				<!--====  End of THIS IS FOR DEBUGGING. PLZ DISABLE WHEN READY TO PUBLISH  ====-->
 				
