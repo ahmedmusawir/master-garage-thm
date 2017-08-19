@@ -16,6 +16,8 @@
   -webkit-box-shadow: 9px 13px 26px 1px rgba(46, 44, 46, 0.5);
   -moz-box-shadow: 9px 13px 26px 1px rgba(46, 44, 46, 0.5);
   box-shadow: 9px 13px 26px 1px rgba(46, 44, 46, 0.5); }
+  .grid-item .headline {
+    margin-bottom: -3rem; }
 
 .grid-sizer {
   width: 5%; }

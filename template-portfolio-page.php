@@ -19,180 +19,96 @@ get_header(); ?>
 	
 		<main id="main" class="site-main" role="main">
 
+		<?php 
+
+			$custom_taxes = get_terms('product-type'); 
+			// print_r($custom_taxes);	
+		?>
 
 			<article class="col-md-moose text-center">
 
 				<div id="grid-filter" class="center-block">
 
-				    <!-- <select class="form-control">
-
-				        <option value="">All</option>
-
-				        <option value="one">City</option>
-
-				        <option value="two">Nature</option>
-
-				    </select> -->
-
 				    <a class="btn btn-default category active" data-value="">ALL CATEGORY</a>
-				    <a class="btn btn-default category" data-value="one">LAMBORGHINI</a>
-				    <a class="btn btn-default category" data-value="two">FERRARI</a>
-				    <a class="btn btn-default category" data-value="three">PROSCHE</a>
-				    <a class="btn btn-default category" data-value="four">HONDA</a>
+	
+				  	<?php foreach ( $custom_taxes as $taxonomy ) : ?>  	
 
+				    <a class="btn btn-default category" data-value="<?php echo $taxonomy->slug; ?>"><?php echo $taxonomy->name; ?></a>
+					
+					<?php endforeach; ?>
+
+
+
+				    <!-- <a class="btn btn-default category" data-value="three">PROSCHE</a>
+				    <a class="btn btn-default category" data-value="four">HONDA</a>
+ -->
 				    <br> <hr>
 
-				</div>
+				</div> <!-- END OF GRID FILTER -->
 
 				<br>
 
 				<div id="masonry-grid">
 
-
 				    <div class="grid-sizer"></div>
 
-				    <div class="grid-item one three four">
-				        <article class="content-block clearfix">
-				           
-							<a href="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.34.27-PM.png" data-rel="lightbox-0" title=""><img class="alignright wp-image-3264 size-medium" src="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.34.27-PM.png" alt="" width="300" height="267" ></a>				        
-						
-				        </article>
-				    </div>
+					<?php 
 
-				    <div class="grid-item two four">
-				        <article class="content-block clearfix">
-						
-							<a href="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.32.38-PM.png" data-rel="lightbox-0" title=""><img class="alignright wp-image-3264 size-medium" src="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.32.38-PM-300x267.png" alt="" width="300" height="267" ></a>				        
-				        
-				        </article>
-				    </div>
+					$args = array(
+						'post_type' => 'portfolio',
+						'posts_per_page' => 15,
+					);	
 
-				    <div class="grid-item three one three">
-				        <article class="content-block clearfix">
+					$front_page_post_items = new WP_Query($args);		
 
-							<a href="/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.33.23-PM.png" data-rel="lightbox-0" title=""><img class="alignright wp-image-3264 size-medium" src="/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.33.23-PM.png" alt="" width="300" height="267" ></a>				        
-				        
-				        </article>
-				    </div>
+					if ( $front_page_post_items->have_posts() ) :
 
-				    <div class="grid-item one four">
-				        <article class="content-block clearfix">
-						
-							<a href="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.33.43-PM.png" data-rel="lightbox-0" title=""><img class="alignright wp-image-3264 size-medium" src="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.33.43-PM.png" alt="" width="300" height="267" ></a>				        
-				        
-				        </article>
-				    </div>
+						/* Start the Loop */
+						while ( $front_page_post_items->have_posts() ) : $front_page_post_items->the_post(); ?>
 
-				    <div class="grid-item two three">
-				        <article class="content-block clearfix">
-						
-							<a href="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.33.12-PM.png" data-rel="lightbox-0" title=""><img class="alignright wp-image-3264 size-medium" src="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.33.12-PM.png" alt="" width="300" height="267" ></a>				        
-				        
-				        </article>
-				    </div>
+						<?php 
+							$custom_taxes = wp_get_post_terms( $post->ID, array('product-type') );
+							$taxonomy_names = "";
+				
+							foreach ( $custom_taxes as $taxonomy ) {
+								$taxonomy_names .= $taxonomy->slug . " ";
+							}
+						?>
 
-				    <div class="grid-item one three">
-				        <article class="content-block clearfix">
-					
-							<a href="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.32.38-PM.png" data-rel="lightbox-0" title=""><img class="alignright wp-image-3264 size-medium" src="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.32.38-PM-300x267.png" alt="" width="300" height="267" ></a>				        
-				   
-				        </article>
-				    </div>
+					    <div class="grid-item <?php echo $taxonomy_names; ?>">
+					        <article class="content-block clearfix">
+					           
+								<a class="responsive" href="<?php the_post_thumbnail_url( 'full' ); ?> " data-rel="lightbox-0" title="">
+									<?php the_post_thumbnail('thumbnail', array('class' => 'img-responsive')); ?>
+								</a>
+								
+								<h3 class="headline"><?php the_title(); ?></h3>	
+								
+								<p class="text-only">
+									<?php the_content(); ?>
+								</p>
+							
+					        </article>
+					    </div>							
 
-				    <div class="grid-item one three">
-				        <article class="content-block clearfix">
-						
-							<a href="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.32.54-PM.png" data-rel="lightbox-0" title=""><img class="alignright wp-image-3264 size-medium" src="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.32.54-PM.png" alt="" width="300" height="267" ></a>				        
-				        
-				        </article>
-				    </div>
+						<?php 
 
-				    <div class="grid-item two four">
-				        <article class="content-block clearfix">
-						
-							<a href="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.32.38-PM.png" data-rel="lightbox-0" title=""><img class="alignright wp-image-3264 size-medium" src="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.32.38-PM-300x267.png" alt="" width="300" height="267" ></a>				        
-				        
-				        </article>
-				    </div>
+						endwhile;
 
-				    <div class="grid-item two four">
-				        <article class="content-block clearfix">
-						
-							<a href="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.32.38-PM.png" data-rel="lightbox-0" title=""><img class="alignright wp-image-3264 size-medium" src="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.32.38-PM-300x267.png" alt="" width="300" height="267" ></a>				        
-				        
-				        </article>
-				    </div>
-				    <div class="grid-item one three four">
-				        <article class="content-block clearfix">
-				           
-							<a href="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.34.27-PM.png" data-rel="lightbox-0" title=""><img class="alignright wp-image-3264 size-medium" src="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.34.27-PM.png" alt="" width="300" height="267" ></a>				        
-						
-				        </article>
-				    </div>
+						the_posts_navigation();
 
-				    <div class="grid-item two four">
-				        <article class="content-block clearfix">
-						
-							<a href="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.32.38-PM.png" data-rel="lightbox-0" title=""><img class="alignright wp-image-3264 size-medium" src="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.32.38-PM-300x267.png" alt="" width="300" height="267" ></a>				        
-				        
-				        </article>
-				    </div>
+						wp_reset_postdata();
 
-				    <div class="grid-item three one three">
-				        <article class="content-block clearfix">
 
-							<a href="/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.33.23-PM.png" data-rel="lightbox-0" title=""><img class="alignright wp-image-3264 size-medium" src="/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.33.23-PM.png" alt="" width="300" height="267" ></a>				        
-				        
-				        </article>
-				    </div>
+					else :
 
-				    <div class="grid-item one four">
-				        <article class="content-block clearfix">
-						
-							<a href="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.33.43-PM.png" data-rel="lightbox-0" title=""><img class="alignright wp-image-3264 size-medium" src="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.33.43-PM.png" alt="" width="300" height="267" ></a>				        
-				        
-				        </article>
-				    </div>
+						get_template_part( 'template-parts/content', 'none' );
 
-				    <div class="grid-item two three">
-				        <article class="content-block clearfix">
-						
-							<a href="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.33.12-PM.png" data-rel="lightbox-0" title=""><img class="alignright wp-image-3264 size-medium" src="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.33.12-PM.png" alt="" width="300" height="267" ></a>				        
-				        
-				        </article>
-				    </div>
+					endif; ?>
 
-				    <div class="grid-item one three">
-				        <article class="content-block clearfix">
-					
-							<a href="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.32.38-PM.png" data-rel="lightbox-0" title=""><img class="alignright wp-image-3264 size-medium" src="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.32.38-PM-300x267.png" alt="" width="300" height="267" ></a>				        
-				   
-				        </article>
-				    </div>
-
-				    <div class="grid-item one three">
-				        <article class="content-block clearfix">
-						
-							<a href="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.32.54-PM.png" data-rel="lightbox-0" title=""><img class="alignright wp-image-3264 size-medium" src="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.32.54-PM.png" alt="" width="300" height="267" ></a>				        
-				        
-				        </article>
-				    </div>
-
-				    <div class="grid-item two four">
-				        <article class="content-block clearfix">
-						
-							<a href="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.32.38-PM.png" data-rel="lightbox-0" title=""><img class="alignright wp-image-3264 size-medium" src="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.32.38-PM-300x267.png" alt="" width="300" height="267" ></a>				        
-				        
-				        </article>
-				    </div>
-
-				    <div class="grid-item two four">
-				        <article class="content-block clearfix">
-						
-							<a href="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.32.38-PM.png" data-rel="lightbox-0" title=""><img class="alignright wp-image-3264 size-medium" src="http://garage.local/wp-content/uploads/2017/08/Screen-Shot-2017-08-16-at-5.32.38-PM-300x267.png" alt="" width="300" height="267" ></a>				        
-				        
-				        </article>
-				    </div>
+					<h2 class="block-title">
+						<!-- <a class="btn btn-default btn-block" href="/blog/" title="">All Posts</a> -->
+					</h2>					    
 
 				</div>
 			<!-- End of Masonry Grid  -->
@@ -204,5 +120,40 @@ get_header(); ?>
 	</div><!-- #primary -->
 	
 </section> <!-- End Container -->	
+
+<!-- VUE JS PORTFOLIO MENU LOOP -->
+<script type="text/javascript">
+Vue.config.devtools = true;
+
+new Vue ({
+  el: 				'#main',
+  data: {
+    ajax:           '<?php echo get_site_url(); ?>',
+    posts:          '',
+    catValue:       '',
+  },  
+  created: function() {
+    this.getProductTypes();
+  },
+  methods: {
+     getProductTypes: function() {
+        var app = this;
+         // axios.get( app.ajax + '/wp-json/wp/v2/posts?categories=5&per_page=100')
+         // axios.get( app.ajax + '/wp-json/wp/v2/posts?per_page=100')
+         // axios.get( app.ajax + '/wp-json/wp/v2/testimonials-api?per_page=100')
+         axios.get( app.ajax + '/wp-json/wp/v2/product-type')
+          .then(function(response) {
+            app.posts = response.data;
+            return app.posts;
+        })
+         .catch(function(error){
+           console.log(error);
+         });
+     },
+  }
+});
+</script>
+
+
 <?php
 get_footer();
