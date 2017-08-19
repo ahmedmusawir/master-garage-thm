@@ -182,7 +182,7 @@ body {
 		}
 	}
 	.navbar-toggle {
-		border: 3px solid lighten( $tiana-primary, 20% );
+		border: 3px solid $imb-primary;
 
 		&:hover, &:focus {
 			background-color: $tiana-primary;
@@ -330,6 +330,10 @@ img {
 		padding: 1.5rem 5rem;
 		border-radius: 50px;
 	}
+
+	@media ( max-width: 800px ) {
+		text-align: center;
+	}
 	
 }
 
@@ -458,6 +462,7 @@ img {
 
 		.icon-content {
 			img {
+				margin-bottom: 1rem;
 				&:hover {
 					opacity: .5;
 				}
@@ -1653,8 +1658,18 @@ img {
 	.widget-footer-container {
 
 		.footer-icon-block {
-			// border: 1rem dotted yellow;
+
 			.content {
+
+				@media ( max-width: 800px ) {
+					display: block;
+					clear: both;
+					margin-left: 35%;
+				}	
+				@media ( max-width: 500px ) {
+					margin-left: 5%;
+				}
+
 				.icon {
 					color: $smoke;
 					float: left;
@@ -1663,6 +1678,8 @@ img {
 					height: 100px;
 					border-radius: 50%;
 					background-color: $imb-secondary;
+
+
 
 					.fa-mobile {
 						margin-top: 1.8rem;

@@ -56,7 +56,7 @@ get_header('home'); ?>
 			<figure class="col-sm-4 col-md-4 col-md-lg">
 				<!-- <a href="#" target="_blank"> -->
 				<a href="#">
-					<img class="img-responsive img-left wow bounceInLeft" src="/wp-content/uploads/2017/08/right-image-400x300.jpg" data-wow-duration="1s" data-wow-delay="0s" alt="">
+					<img class="img-responsive center-block img-left wow bounceInLeft" src="/wp-content/uploads/2017/08/right-image-400x300.jpg" data-wow-duration="1s" data-wow-delay="0s" alt="">
 					<article class="text-content"><br>
 
 						<h3 class="subheadline">GARAGE FLOORING</h3>
@@ -74,7 +74,7 @@ get_header('home'); ?>
 			<figure class="col-sm-4 col-md-4 col-md-lg">
 
 				<a href="#">
-					<img class="img-responsive img-middle wow zoomIn" src="/wp-content/uploads/2017/08/left-img-400x300.jpg" data-wow-duration="1s" data-wow-delay="0s" alt="">
+					<img class="img-responsive center-block img-middle wow zoomIn" src="/wp-content/uploads/2017/08/left-img-400x300.jpg" data-wow-duration="1s" data-wow-delay="0s" alt="">
 					<article class="text-content"><br>
 
 						<h3 class="subheadline">OVERHEAD RACKS</h3>
@@ -92,7 +92,7 @@ get_header('home'); ?>
 			<figure class="col-sm-4 col-md-4 col-md-lg">
 
 				<a href="#" target="_blank">
-					<img class="img-responsive img-right wow bounceInRight" src="/wp-content/uploads/2017/08/right-image-400x300-1.jpg" data-wow-duration="1s" data-wow-delay="0s" alt="">
+					<img class="img-responsive center-block img-right wow bounceInRight" src="/wp-content/uploads/2017/08/right-image-400x300-1.jpg" data-wow-duration="1s" data-wow-delay="0s" alt="">
 					<article class="text-content"><br>
 
 						<h3 class="subheadline">GARAGE CABINETS</h3>
@@ -143,7 +143,7 @@ get_header('home'); ?>
 			<figure class="col-md-3 col-lg-3">
 				<!-- <a href="#" target="_blank"> -->
 				<a href="#">
-					<img class="img-responsive img-left wow bounceInLeft" src="/wp-content/uploads/2017/08/right-image-400x300.jpg" data-wow-duration="1s" data-wow-delay="0s" alt="">
+					<img class="img-responsive center-block img-left wow bounceInLeft" src="/wp-content/uploads/2017/08/right-image-400x300.jpg" data-wow-duration="1s" data-wow-delay="0s" alt="">
 	
 				</a>
 
@@ -151,7 +151,7 @@ get_header('home'); ?>
 			<figure class="col-md-3 col-lg-3">
 
 				<a href="#">
-					<img class="img-responsive img-middle wow zoomIn" src="/wp-content/uploads/2017/08/left-img-400x300.jpg" data-wow-duration="1s" data-wow-delay="0s" alt="">
+					<img class="img-responsive center-block img-middle wow zoomIn" src="/wp-content/uploads/2017/08/left-img-400x300.jpg" data-wow-duration="1s" data-wow-delay="0s" alt="">
 
 				</a>
 
@@ -159,7 +159,7 @@ get_header('home'); ?>
 			<figure class="col-md-3 col-lg-3">
 
 				<a href="#">
-					<img class="img-responsive img-middle wow zoomIn" src="/wp-content/uploads/2017/08/left-img-400x300.jpg" data-wow-duration="1s" data-wow-delay="0s" alt="">
+					<img class="img-responsive center-block img-middle wow zoomIn" src="/wp-content/uploads/2017/08/left-img-400x300.jpg" data-wow-duration="1s" data-wow-delay="0s" alt="">
 
 				</a>
 
@@ -167,7 +167,7 @@ get_header('home'); ?>
 			<figure class="col-md-3 col-lg-3">
 
 				<a href="#" target="_blank">
-					<img class="img-responsive img-right wow bounceInRight" src="/wp-content/uploads/2017/08/right-image-400x300-1.jpg" data-wow-duration="1s" data-wow-delay="0s" alt="">
+					<img class="img-responsive center-block img-right wow bounceInRight" src="/wp-content/uploads/2017/08/right-image-400x300-1.jpg" data-wow-duration="1s" data-wow-delay="0s" alt="">
 				
 				</a>
 

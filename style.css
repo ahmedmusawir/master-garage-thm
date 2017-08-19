@@ -5999,7 +5999,7 @@ body {
     .navbar .navbar-brand .logo {
       margin-top: -3rem; }
   .navbar .navbar-toggle {
-    border: 3px solid #da0002; }
+    border: 3px solid #740001; }
     .navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus {
       background-color: #740001;
       color: black; }
@@ -6080,6 +6080,9 @@ img {
     margin-top: 3rem;
     padding: 1.5rem 5rem;
     border-radius: 50px; }
+  @media (max-width: 800px) {
+    .above-blog-block-1 {
+      text-align: center; } }
 
 .above-blog-block-2 {
   padding-bottom: 5rem;
@@ -6161,8 +6164,10 @@ img {
     padding-top: 5rem;
     padding-bottom: 5rem;
     font-size: 2rem; }
-  .below-blog-block-1 .wrapper .icon-content img:hover {
-    opacity: .5; }
+  .below-blog-block-1 .wrapper .icon-content img {
+    margin-bottom: 1rem; }
+    .below-blog-block-1 .wrapper .icon-content img:hover {
+      opacity: .5; }
 
 /*=====  End of Home page style END  ======*/
 /**
@@ -6968,6 +6973,14 @@ img {
   background: #740001; }
   #footer-main .footer-body {
     padding-top: 3rem; }
+  @media (max-width: 800px) {
+    #footer-main .widget-footer-container .footer-icon-block .content {
+      display: block;
+      clear: both;
+      margin-left: 35%; } }
+  @media (max-width: 500px) {
+    #footer-main .widget-footer-container .footer-icon-block .content {
+      margin-left: 5%; } }
   #footer-main .widget-footer-container .footer-icon-block .content .icon {
     color: #EEEEEE;
     float: left;
