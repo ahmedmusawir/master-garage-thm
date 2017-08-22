@@ -18,7 +18,7 @@ If you want to add your own css code, please do it in /css/custom.css
 -------------------------------------------------------------- */
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css);
-@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
 .alignnone {
   margin: 5px 20px 20px 0; }
 
@@ -5921,10 +5921,10 @@ button.close {
   .hidden-print {
     display: none !important; } }
 html {
-  font-family: 'Quicksand', sans-serif; }
+  font-family: 'Roboto', sans-serif; }
 
 body {
-  font-family: 'Quicksand', sans-serif; }
+  font-family: 'Roboto', sans-serif; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
     color: #740001; }
   body a {
@@ -5933,7 +5933,7 @@ body {
       text-decoration: none !important; }
 
 #content {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: url() no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -5982,7 +5982,7 @@ body {
   padding-bottom: 2.5rem;
   background-color: #EEEEEE;
   margin-bottom: 0rem;
-  font-family: 'Quicksand', sans-serif; }
+  font-family: 'Roboto', sans-serif; }
   .navbar .header-social {
     padding-top: 1rem; }
     .navbar .header-social li {
@@ -6261,9 +6261,9 @@ img {
   margin-top: 5rem;
   margin-right: 0rem;
   margin-left: .15rem;
-  font-family: 'Quicksand', sans-serif; }
+  font-family: 'Roboto', sans-serif; }
   .blog-post .entry-header h2 {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     font-size: 2.2rem;
     font-weight: 300;
@@ -6319,7 +6319,7 @@ img {
     padding-right: 1.5rem;
     padding-top: 2rem; }
     .blog-post .only-text p {
-      font-family: 'Quicksand', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 1.5rem;
       font-variant: 500;
       color: #7d7d7d;
@@ -6382,7 +6382,7 @@ img {
 .single-page .entry-meta {
   display: none; }
 .single-page .entry-header h1 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-variant: small-caps;
   font-size: 4rem;
   color: #40b1aa;
@@ -6560,7 +6560,7 @@ img {
     float: left;
     padding-top: 5rem; }
   .praise-block .praise-text p {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     font-weight: 300;
     color: #646464;
@@ -6877,7 +6877,7 @@ img {
     color: #8a8a8a;
     padding-bottom: 2rem;
     text-transform: uppercase;
-    font-family: 'Quicksand', sans-serif; }
+    font-family: 'Roboto', sans-serif; }
   .widget .srp-post-content {
     color: #7d7d7d; }
   .widget .custom-widget h3 {
@@ -6926,7 +6926,7 @@ img {
       font-size: 1.5rem;
       padding: 1rem;
       font-weight: 300;
-      font-family: 'Quicksand', sans-serif;
+      font-family: 'Roboto', sans-serif;
       border-bottom: 3px solid #740001;
       -webkit-transition: all 0.5s ease-in-out;
       -moz-transition: all 0.5s ease-in-out;

@@ -11,13 +11,40 @@
   margin: 0 auto;
   margin-bottom: 5rem; }
 
+#pagination {
+  margin-bottom: 5rem; }
+  #pagination .paging-first-page {
+    background-color: #a70000;
+    box-shadow: 1rem 1rem 3rem #666666;
+    padding: 1.5rem 4rem; }
+    #pagination .paging-first-page a {
+      color: #F9F9F9;
+      font-size: 2rem; }
+  #pagination .paging-text {
+    background-color: #a70000;
+    box-shadow: 1rem 1rem 3rem #666666;
+    padding: 3.5rem 4rem; }
+    #pagination .paging-text aside {
+      margin-top: -2rem; }
+    #pagination .paging-text a {
+      color: #F9F9F9;
+      font-size: 2rem; }
+
 .grid-item {
   width: 25%;
   -webkit-box-shadow: 9px 13px 26px 1px rgba(46, 44, 46, 0.5);
   -moz-box-shadow: 9px 13px 26px 1px rgba(46, 44, 46, 0.5);
   box-shadow: 9px 13px 26px 1px rgba(46, 44, 46, 0.5); }
+  .grid-item:hover {
+    -webkit-box-shadow: 3px 3px 6px 1px rgba(46, 44, 46, 0.1) inset;
+    -moz-box-shadow: 3px 3px 6px 1px rgba(46, 44, 46, 0.1) inset;
+    box-shadow: 3px 3px 6px 1px rgba(46, 44, 46, 0.1) inset; }
   .grid-item .headline {
-    margin-bottom: -3rem; }
+    margin-top: -5rem;
+    margin-bottom: -2rem;
+    font-size: 1.5rem;
+    color: #F9F9F9;
+    text-shadow: 4px 4px 8px black; }
 
 .grid-sizer {
   width: 5%; }

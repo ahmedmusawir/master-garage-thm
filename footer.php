@@ -119,15 +119,7 @@
 
 					    <aside id="recent-posts-2" class="widget-footer-container widget_recent_entries">
 
-					    	<?php 
-
-								if ( ! is_active_sidebar( 'footer-sidebar-5' ) ) {
-									return;
-								}
-
-								dynamic_sidebar( 'footer-sidebar-5' ); 
-
-							?>
+					    	
 					      
 					   	</aside>
 					
@@ -144,10 +136,18 @@
 
 			<div id="copyright" class="copyright text-center">
 				<!-- <p class="text-center">All Rights Reserved &copy; <?php echo date('Y'); ?>. <a target="_blank" class="" href="http://tianagustafson.com/">Designed & Developed by Tianagustafson.com</a></p> -->
-				<p class="text-only">
-					To learn more about our garage fransformation services and products, or to schedule a <br>
-					<b>FREE, NO OBLIGATION</b> consultation please complete the form below or contact us by phone.
-				</p>
+
+						<?php 
+
+							if ( ! is_active_sidebar( 'footer-sidebar-5' ) ) {
+								return;
+							}
+
+							dynamic_sidebar( 'footer-sidebar-5' ); 
+
+						?>				
+					<!-- To learn more about our garage fransformation services and products, or to schedule a <br>
+					<b>FREE, NO OBLIGATION</b> consultation please complete the form below or contact us by phone. -->
 				<!--==============================================================================
 				=            THIS IS FOR DEBUGGING. PLZ DISABLE WHEN READY TO PUBLISH            =
 				===============================================================================-->

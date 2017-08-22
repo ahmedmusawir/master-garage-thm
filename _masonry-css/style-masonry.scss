@@ -1,6 +1,34 @@
 $imb-primary: #580000;
 $imb-secondary: #a70000;
 $imb-third: gray;
+//## Gray and brand colors for use across Bootstrap.
+
+$gray-base:              #000;
+$gray-darker:            lighten($gray-base, 13.5%); // #222;
+$gray-dark:              lighten($gray-base, 20%);   // #333;
+$gray:                   lighten($gray-base, 33.5%); // #555;
+$gray-light:             lighten($gray-base, 46.7%); // #777;
+$gray-lighter:           lighten($gray-base, 93.5%); // #eee;
+
+$white       : #FFFFFF;
+$ghost       : #FAFAFA;
+$snow        : #F9F9F9;
+$vapor       : #F6F6F6;
+$white-smoke : #F5F5F5;
+$silver      : #EFEFEF;
+$smoke       : #EEEEEE;
+$gainsboro   : #DDDDDD;
+$iron        : #CCCCCC;
+$base        : #AAAAAA;
+$aluminum    : #999999;
+$jumbo       : #888888;
+$monsoon     : #777777;
+$steel       : #666666;
+$charcoal    : #555555;
+$tuatara     : #444444;
+$oil         : #333333;
+$jet         : #222222;
+$black       : #000000;
 // @import "bourbon/bourbon";
 // @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css";
 // @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
@@ -32,6 +60,33 @@ $imb-third: gray;
 
 }
 
+#pagination {
+	margin-bottom: 5rem;
+
+	.paging-first-page {
+		background-color: $imb-secondary;
+		box-shadow: 1rem 1rem 3rem $steel;
+		padding: 1.5rem 4rem;
+		a {
+			color: $snow;	
+			font-size: 2rem;
+		}
+	}
+
+	.paging-text {
+		background-color: $imb-secondary;
+		box-shadow: 1rem 1rem 3rem $steel;
+		padding: 3.5rem 4rem;
+
+		aside {
+			margin-top: -2rem;
+		}
+		a {
+			color: $snow;
+			font-size: 2rem;
+		}
+	}
+}
 
 .grid-item {
 
@@ -45,8 +100,31 @@ $imb-third: gray;
 
 	box-shadow: 9px 13px 26px 1px rgba(46,44,46, 0.5);
 
+	// -webkit-box-shadow: 9px 13px 26px 1px rgba(46,44,46, 0.5);
+
+	// -moz-box-shadow: 9px 13px 26px 1px rgba(46,44,46, 0.5);
+
+	// box-shadow: 9px 13px 26px 1px rgba(46,44,46, 0.5);
+
+    // -webkit-transition: all 2s ease-in-out; /* Safari */
+    // transition: all 2s ease-in-out;	
+
+	&:hover {
+		-webkit-box-shadow: 3px 3px 6px 1px rgba(46,44,46, 0.1) inset;
+
+		-moz-box-shadow: 3px 3px 6px 1px rgba(46,44,46, 0.1) inset;
+
+		box-shadow: 3px 3px 6px 1px rgba(46,44,46, 0.1) inset;
+	}
+
 	.headline {
-		margin-bottom: -3rem;
+		margin-top: -5rem;
+		margin-bottom: -2rem;
+		font-size: 1.5rem;
+		color: $snow;
+		text-shadow: 4px 4px 8px black;
+		// background-color: rgba( $steel, .9);
+		// z-index: 100;
 	}
 
 }

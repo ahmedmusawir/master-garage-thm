@@ -29,20 +29,21 @@ $alyssa-green: #abd9ce;
 // @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 // @import url(https://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic);
 // @import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic);
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+// @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 
 
 html { 
  
 	// display: none;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Roboto', sans-serif;
 
 }
 
 body {
 
 	// font-family: 'Muli', sans-serif;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	// padding-top: 72px;
 
 	h1, h2, h3, h4, h5, h6 {
@@ -76,7 +77,7 @@ body {
 
 #content {
 
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	background: url() no-repeat center center fixed; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
@@ -150,7 +151,7 @@ body {
 	background-color: $smoke;
 	// box-shadow: 2px 2px 8px $gray-light;
 	margin-bottom: 0rem;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Roboto', sans-serif;
 
 	.header-social {
 		padding-top: 1rem;
@@ -617,12 +618,12 @@ img {
 	margin-top: 5rem;
 	margin-right: 0rem;
 	margin-left: .15rem;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	
 	.entry-header {
 
 		h2 {
-			font-family: 'Quicksand', sans-serif;
+			font-family: 'Roboto', sans-serif;
 			text-transform: uppercase;
 			
 			font-size: 2.2rem;
@@ -687,7 +688,7 @@ img {
 		padding-right: 1.5rem;
 		padding-top: 2rem;
 		p {
-			font-family: 'Quicksand', sans-serif;
+			font-family: 'Roboto', sans-serif;
 
 			font-size: 1.5rem;
 			font-variant: 500;
@@ -797,7 +798,7 @@ img {
 			// border: 1px solid red;
 
 		h1 {
-			font-family: 'Quicksand', sans-serif;
+			font-family: 'Roboto', sans-serif;
 			font-variant: small-caps;
 			font-size: 4rem;
 			color: darken( $brand-primary, 10% );
@@ -1054,7 +1055,7 @@ img {
 	.praise-text {
 
 		p {
-			font-family: 'Quicksand', sans-serif;
+			font-family: 'Roboto', sans-serif;
 			font-size: 2rem;
 			font-weight: 300;
 			color: lighten( $tiana-gray, 25% );
@@ -1424,7 +1425,7 @@ img {
 		color: lighten( $tiana-gray, 40% );
 		padding-bottom: 2rem;
 		text-transform: uppercase;
-		font-family: 'Quicksand', sans-serif;
+		font-family: 'Roboto', sans-serif;
 
 
 	}
@@ -1474,7 +1475,7 @@ img {
 			font-size: 1.5rem;
 			padding: 1rem;
 			font-weight: 300;
-			font-family: 'Quicksand', sans-serif;
+			font-family: 'Roboto', sans-serif;
 			border-bottom: 3px solid $tiana-primary;
 			
 			@include transition(all 0.5s ease-in-out);
@@ -1789,7 +1790,7 @@ img {
 			}
 
 			a {
-				// font-family: 'Quicksand', sans-serif !important;
+				// font-family: 'Roboto', sans-serif !important;
 				// border: 1px solid red;
 				// font-size: 5rem;
 			}

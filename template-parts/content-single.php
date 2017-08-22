@@ -178,7 +178,7 @@ $related_post_items = new WP_Query($args);
 
 						<div class="featured-img">
 						
-							<a href="<?php the_permalink(); ?>" title=""><img class="img-responsive" src="/wp-content/uploads/2016/10/Filler-Img.jpg" alt=""></a>
+							<a href="<?php the_permalink(); ?>" title=""><img class="img-responsive" src="/wp-content/uploads/2017/08/garage-default-400x400.jpg" alt=""></a>
 
 						</div>				
 
