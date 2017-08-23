@@ -68,11 +68,15 @@
 			    <div class="collapse navbar-collapse navbar-ex1-collapse">
 					
 					<ul class="header-social pull-right">
-						<li><a target="_blank" href="https://www.facebook.com/mybestbod/?ref=bookmarks"><i class="fa fa-facebook fa-2x"></i></a></li>				
-						<li><a target="_blank" href="https://www.instagram.com/mybestbod_fit/"><i class="fa fa-instagram fa-2x"></i></a></li>				
-						<li><a target="_blank" href="https://pinterest.com/mybestbodever/"><i class="fa fa-pinterest fa-2x"></i></a></li>				
-						<li><a target="_blank" href="https://twitter.com/mybestbod"><i class="fa fa-twitter fa-2x"></i></a></li>				
-						<!-- <li><a target="_blank" href="https://www.linkedin.com/in/tianastar"><i class="fa fa-linkedin fa-2x"></i></a></li>				 -->
+						<li><a target="_blank" href="<?php the_field('navigation_social_link_1'); ?>"><i class="fa <?php the_field('navigation_social_icon_1'); ?> fa-2x"></i></a></li>				
+						<li><a target="_blank" href="<?php the_field('navigation_social_link_2'); ?>"><i class="fa <?php the_field('navigation_social_icon_2'); ?> fa-2x"></i></a></li>				
+						<li><a target="_blank" href="<?php the_field('navigation_social_link_3'); ?>"><i class="fa <?php the_field('navigation_social_icon_3'); ?> fa-2x"></i></a></li>				
+						<li><a target="_blank" href="<?php the_field('navigation_social_link_4'); ?>"><i class="fa <?php the_field('navigation_social_icon_4'); ?> fa-2x"></i></a></li>	
+
+						<!-- <li><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x"></i></a></li>				
+						<li><a target="_blank" href="https://www.instagram.com/"><i class="fa fa-instagram fa-2x"></i></a></li>				
+						<li><a target="_blank" href="https://pinterest.com/"><i class="fa fa-pinterest fa-2x"></i></a></li>				
+						<li><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter fa-2x"></i></a></li>												 -->
 					</ul>
 
 			    	
@@ -108,8 +112,11 @@
 	
 	<header id="front-pg-header">
 
-		<img src="/wp-content/uploads/2017/08/top-hero-img-1920x1000.jpg" alt="">
-
+		<img class="img-responsive hidden-xs" src="<?php the_field('top_hero_image_desktop'); ?>" alt="">
+		<img class="img-responsive visible-xs" src="<?php the_field('top_hero_image_mobile'); ?>" alt="">
+<!-- 		<img class="img-responsive hidden-xs" src="/wp-content/uploads/2017/08/top-hero-img-1920x1000.jpg" alt="">
+		<img class="img-responsive visible-xs" src="/wp-content/uploads/2017/08/top-hero-img-800x400.jpg" alt="">
+ -->
 	</header>
 	
 

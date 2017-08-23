@@ -67,9 +67,11 @@ $black       : #000000;
 		background-color: $imb-secondary;
 		box-shadow: 1rem 1rem 3rem $steel;
 		padding: 1.5rem 4rem;
+
 		a {
 			color: $snow;	
-			font-size: 2rem;
+			font-size: 1.5rem;
+			text-align: center;
 		}
 	}
 
@@ -83,7 +85,7 @@ $black       : #000000;
 		}
 		a {
 			color: $snow;
-			font-size: 2rem;
+			font-size: 1.5rem;
 		}
 	}
 }

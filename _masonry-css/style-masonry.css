@@ -19,7 +19,8 @@
     padding: 1.5rem 4rem; }
     #pagination .paging-first-page a {
       color: #F9F9F9;
-      font-size: 2rem; }
+      font-size: 1.5rem;
+      text-align: center; }
   #pagination .paging-text {
     background-color: #a70000;
     box-shadow: 1rem 1rem 3rem #666666;
@@ -28,7 +29,7 @@
       margin-top: -2rem; }
     #pagination .paging-text a {
       color: #F9F9F9;
-      font-size: 2rem; }
+      font-size: 1.5rem; }
 
 .grid-item {
   width: 25%;

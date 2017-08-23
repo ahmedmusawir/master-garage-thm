@@ -1,7 +1,6 @@
 <?php
 /**
  * The main template file.
- * Template Name: Blog Template
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
  * It is used to display a page when nothing more specific matches a query.
@@ -18,7 +17,7 @@ get_header(); ?>
 
 <section class="above-blog-block-1">
 	
-	<!-- <img class="img-responsive wow lightSpeedIn" src="/wp-content/uploads/2016/06/TianaMediaBlock.jpg" data-wow-duration="1s" data-wow-delay="0s" alt=""> -->
+	<img class="img-responsive wow lightSpeedIn" src="/wp-content/uploads/2016/06/TianaMediaBlock.jpg" data-wow-duration="1s" data-wow-delay="0s" alt="">
 	<!-- <img class="img-responsive wow zoomInUp center-block" src="/wp-content/uploads/2016/06/TianaNEWJuneTextBlock1.png" data-wow-duration="1s" data-wow-delay="0s" alt=""> -->
 	
 </section>
@@ -27,45 +26,46 @@ get_header(); ?>
 
 	<div class="wrapper container-fluid">
 		
-		<h2>LET'S TALK ABOUT REAL STYLES</h2>
+		<h2>GET INTO ACTION! CLICK AN OPTION BELOW</h2>
 
-		<!-- <h3>
+		<h3>
 			It's time to learn HOW to set up your OWN online systems.<br>
 			From WordPress to Lead Pages to Newsletters. No more <br>
 			guessing or paying thousands to get it done.
 		</h3>
- -->
+
 		<div class="icon-content">
 
 			<figure class="col-sm-4 col-md-4 col-md-lg">
 				<!-- <a href="#" target="_blank"> -->
-				<a href="#" target="_blank">
-					<img class="img-responsive wow bounceInLeft" src="/wp-content/uploads/2016/06/life-style.jpg" data-wow-duration="1s" data-wow-delay="0s" alt="">
-					<article class="text-content"><br>
-						LIFE STYLES
+				<a href="https://tianastar.leadpages.co/leadbox/145df2473f72a2%3A1497094e8b46dc/5655608640405504/" target="_blank">
+					<img class="img-responsive wow bounceInLeft" src="/wp-content/uploads/2016/06/BullseyeLaptopPlay.png" data-wow-duration="1s" data-wow-delay="0s" alt="">
+					<article class="text-content">
+						sign up for my <br>
+						free online masterclass!
 					</article>
 				</a>
+
+				<script data-leadbox="145df2473f72a2:1497094e8b46dc" data-url="https://tianastar.leadpages.co/leadbox/145df2473f72a2%3A1497094e8b46dc/5655608640405504/" data-config="%7B%7D" type="text/javascript" src="https://tianastar.leadpages.co/leadbox-1465587185.js"></script>
 
 			</figure>
 			<figure class="col-sm-4 col-md-4 col-md-lg">
-
-				<a href="#" target="_blank">
-					<img class="img-responsive wow zoomIn" src="/wp-content/uploads/2016/06/body-style.jpg" data-wow-duration="1s" data-wow-delay="0s" alt="">
-					<article class="text-content"><br>
-						BODY STYLES
+				<a href="http://tianagustafson.teachable.com/" target="_blank">
+					<img class="img-responsive wow zoomIn" src="/wp-content/uploads/2016/06/TianaBullseyeImage.png" data-wow-duration="1s" data-wow-delay="0s" alt="">
+					<article class="text-content">
+						check out <br>
+						my e-courses
 					</article>
 				</a>
-
 			</figure>
 			<figure class="col-sm-4 col-md-4 col-md-lg">
-
-				<a href="#" target="_blank">
-					<img class="img-responsive wow bounceInRight" src="/wp-content/uploads/2016/06/biz-style.jpg" data-wow-duration="1s" data-wow-delay="0s" alt="">
-					<article class="text-content"><br>
-						BUSINESS STYLES
+				<a href="https://www.facebook.com/groups/1021388401258512/" target="_blank">
+					<img class="img-responsive wow bounceInRight" src="/wp-content/uploads/2016/06/TianaNEWJuneARROWUP.png" data-wow-duration="1s" data-wow-delay="0s" alt="">
+					<article class="text-content">
+						join the facebook <br>
+						community
 					</article>
 				</a>
-
 			</figure>						
 
 		</div>
@@ -124,7 +124,7 @@ get_header(); ?>
 
 </section>
 
-<section class="below-blog-block-1 hide">
+<section class="below-blog-block-1">
 
 	<div class="wrapper container-fluid">
 		
@@ -158,7 +158,7 @@ get_header(); ?>
 
 </section>
 
-<section class="below-blog-block-2 hide">
+<section class="below-blog-block-2">
 
 		<div class="wrapper container-fluid">
 		

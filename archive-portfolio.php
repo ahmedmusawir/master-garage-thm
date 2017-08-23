@@ -1,7 +1,6 @@
 <?php
 /**
  * The template for displaying all pages.
- * Template Name: Portfolio Template
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -67,7 +66,7 @@ query_posts( '&post_type=portfolio&paged=' . $paged );
 
 					$args = array(
 						'post_type' => 'portfolio',
-						'posts_per_page' => 8,
+						'posts_per_page' => 12,
 						'paged' => $paged,
 					);	
 					
@@ -106,8 +105,6 @@ query_posts( '&post_type=portfolio&paged=' . $paged );
 						    </div>							
 					
 							<?php 
-							// echo $counter;
-
 					
 							endwhile;
 					
@@ -125,20 +122,23 @@ query_posts( '&post_type=portfolio&paged=' . $paged );
 
 				</div>
 			<!-- End of Masonry Grid  -->
+				
 				<h2 id="pagination">
-				<?php  if(1 == $paged) : ?>
-					<div class="text-center paging-first-page"><?php next_posts_link(); ?></div>
-				<?php elseif( $counter < 8 ) : ?>
-					<div class="paging-text"><aside class="pull-right"><?php previous_posts_link(); ?></aside></div>
-				<?php else: ?>
-					<div class="paging-text"><aside class="pull-left"><?php next_posts_link(); ?></aside><aside class="pull-right"><?php previous_posts_link(); ?></aside></div>
-				<?php endif; ?>
-					<!-- <div class="pull-right paging-text"><?php previous_posts_link(); ?></div> -->
 
-					<!-- <div class="paging-text">
-						<aside class="pull-left"><?php next_posts_link(); ?></aside>
-						<aside class="pull-right"><?php previous_posts_link(); ?></aside>
-					</div> -->
+				<?php  if(1 == $paged) : ?>
+
+						<div class="paging-first-page"><?php next_posts_link(); ?></div>
+
+				<?php elseif( $counter < 12 ) : ?>
+
+					<div class="paging-text"><aside class="pull-right"><?php previous_posts_link(); ?></aside></div>
+				
+				<?php else: ?>
+				
+					<div class="paging-text"><aside class="pull-left"><?php next_posts_link(); ?></aside><aside class="pull-right"><?php previous_posts_link(); ?></aside></div>
+			
+				<?php endif; ?>
+					
 
 				</h2>		
 

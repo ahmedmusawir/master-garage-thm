@@ -1,0 +1,30 @@
+/**
+ *
+ * Admin Editor Title
+ *
+ */
+#poststuff #title {
+  border: 2px solid #c6a589; }
+
+/*===============================================
+=            ACF Admin Backend Style            =
+===============================================*/
+.postbox.acf-postbox {
+  border: 1px solid #c6a589; }
+  .postbox.acf-postbox:hover {
+    box-shadow: 2px 2px 6px gray; }
+  .postbox.acf-postbox .ui-sortable-handle {
+    background-color: #59524c;
+    color: #f8f4f0; }
+    .postbox.acf-postbox .ui-sortable-handle .acf-hndle-cog {
+      display: none !important; }
+  .postbox.acf-postbox .acf-field {
+    background-color: #f0e7df; }
+  .postbox.acf-postbox .inside.acf-fields {
+    background-color: #f0e7df; }
+  .postbox.acf-postbox .button-link {
+    background-color: #e7d9ce; }
+
+/*=====  End of ACF Admin Backend Style  ======*/
+
+/*# sourceMappingURL=admin.css.map */
