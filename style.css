@@ -6125,6 +6125,8 @@ img {
       padding-top: 5rem;
       padding-bottom: 5rem;
       font-size: 2rem; }
+    .above-blog-block-2 .wrapper img:hover {
+      opacity: .5; }
     .above-blog-block-2 .wrapper .subheadline {
       color: #0e0000;
       font-size: 2.5rem;
@@ -6181,6 +6183,8 @@ img {
     font-size: 2rem; }
   .below-blog-block-1 .wrapper .icon-content figure {
     margin-bottom: 2rem; }
+    .below-blog-block-1 .wrapper .icon-content figure:hover {
+      opacity: .5; }
     .below-blog-block-1 .wrapper .icon-content figure .item-headline {
       font-size: 1.5rem;
       color: #FFFFFF;

@@ -398,6 +398,12 @@ img {
 			font-size: 2rem;
 		}
 
+		img {
+			&:hover {
+				opacity: .5;
+			}
+		}
+
 		.subheadline {
 			color: darken( $tiana-primary, 20% );
 			font-size: 2.5rem;
@@ -480,7 +486,9 @@ img {
 			figure {
 				margin-bottom: 2rem;
 					// border: 1rem solid red;
-				
+				&:hover {
+					opacity: .5;
+				}
 				.item-headline {
 					font-size: 1.5rem;
 					color: $white;
