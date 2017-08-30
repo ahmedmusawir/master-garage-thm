@@ -5993,7 +5993,7 @@ body {
         padding-right: 1rem;
         color: #740001; }
         .navbar .header-social li i:hover {
-          color: #f30003; }
+          color: #b3b6b8; }
   .navbar .navbar-brand {
     color: #d5d5d5; }
     .navbar .navbar-brand .logo {
@@ -6120,7 +6120,7 @@ img {
         bottom: 0;
         height: 1px;
         width: 10%;
-        border-bottom: 0.8rem solid #740001; }
+        border-bottom: 0.8rem solid #8C9093; }
     .above-blog-block-2 .wrapper .text-only {
       padding-top: 5rem;
       padding-bottom: 5rem;
@@ -6142,7 +6142,7 @@ img {
         bottom: 0;
         height: 1px;
         width: 20%;
-        border-bottom: 0.8rem solid #740001; }
+        border-bottom: 0.8rem solid #8C9093; }
     .above-blog-block-2 .wrapper .subtext-only {
       padding-top: 5rem;
       padding-bottom: 5rem;
@@ -6176,7 +6176,7 @@ img {
       bottom: 0;
       height: 1px;
       width: 10%;
-      border-bottom: 0.8rem solid #740001; }
+      border-bottom: 0.8rem solid #8C9093; }
   .below-blog-block-1 .wrapper .text-only {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -6241,7 +6241,7 @@ img {
  *
  */
 .dr-nia-page-header {
-  border: 1px solid gray;
+  border: 1px solid #3D3935;
   min-height: 200px;
   background: url("/wp-content/uploads/2016/10/page-header-2000-B.jpg");
   box-shadow: 1px 1px 100px #777777;
@@ -6254,7 +6254,7 @@ img {
     color: #eeeeee; }
 
 .dr-nia-single-post-header {
-  border: 1px solid gray;
+  border: 1px solid #3D3935;
   min-height: 200px;
   background: url("/wp-content/uploads/2016/10/page-header-2000-B.jpg");
   box-shadow: 1px 1px 100px #777777;
@@ -6698,7 +6698,7 @@ img {
     background-color: #740001;
     text-align: center; }
     #Contact-Main-Content .left-text-content .contact-social li:hover {
-      background-color: #a60002; }
+      background-color: #8C9093; }
     @media (min-width: 790px) and (max-width: 1000px) {
       #Contact-Main-Content .left-text-content .contact-social li {
         width: 50px;
@@ -6744,7 +6744,7 @@ img {
  *
  */
 .dr-nia-contact-header {
-  border: 1px solid gray;
+  border: 1px solid #3D3935;
   min-height: 200px;
   background: url("/wp-content/uploads/2016/10/page-header-2000-B.jpg");
   box-shadow: 1px 1px 100px #777777; }
@@ -6984,7 +6984,7 @@ img {
   background: url("/wp-content/uploads/2016/06/footer-bg.jpg"); }
 
 #footer-main {
-  background: #740001; }
+  background: #3D3935; }
   #footer-main .footer-body {
     padding-top: 3rem; }
   @media (max-width: 800px) {
@@ -7002,7 +7002,7 @@ img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #a60002; }
+    background-color: #740001; }
     @media (max-width: 800px) {
       #footer-main .widget-footer-container .footer-icon-block .content .icon {
         margin-bottom: 2rem; } }
@@ -7074,7 +7074,7 @@ img {
   padding-bottom: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  background-color: #a60002; }
+  background-color: #8C9093; }
   #copyright .text-only {
     color: #EEEEEE;
     font-size: 1.6rem;

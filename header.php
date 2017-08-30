@@ -39,7 +39,7 @@
 				<article class="form-bar-content-holder">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
 						<div class="form-bar-left-block text-center">
-							<h4 class="headline">For Your FREE in Garage Estimate, Call Jarrett Today (813) 541-0002 </h4>
+							<a href="tel:<?php the_field( 'top_info_bar_mobile_number', 6 ); ?>"><h4 class="headline"><?php the_field( 'top_info_bar_text', 6 ); ?></h4></a> 
 							<!-- <img class="img-responsive center-block" src="/wp-content/uploads/2016/06/Screen-Shot-2016-06-24-at-2.43.19-PM.png" alt=""> -->
 						</div>
 					</div>	

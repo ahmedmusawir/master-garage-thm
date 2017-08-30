@@ -1,6 +1,6 @@
 $imb-primary: #740001; //maroon
-$imb-secondary: #a60002; //darkred
-$imb-third: gray;
+$imb-secondary: #8C9093; //light darkred
+$imb-third: #3D3935; //dark gray
 $brand-primary:  #5FC5BF;
 // $brand-primary:  #FFFC13;
 // $brand-primary: #FF6600;
@@ -387,7 +387,7 @@ img {
 			  bottom  : 0;
 			  height  : 1px;
 			  width   : 10%; 
-			  border-bottom: .8rem solid $tiana-primary;
+			  border-bottom: .8rem solid $imb-secondary;
 			}
 
 		}
@@ -421,7 +421,7 @@ img {
 			  bottom  : 0;
 			  height  : 1px;
 			  width   : 20%; 
-			  border-bottom: .8rem solid $tiana-primary;
+			  border-bottom: .8rem solid $imb-secondary;
 			}
 
 		}
@@ -472,7 +472,7 @@ img {
 			  bottom  : 0;
 			  height  : 1px;
 			  width   : 10%; 
-			  border-bottom: .8rem solid $tiana-primary;
+			  border-bottom: .8rem solid $imb-secondary;
 			}
 
 		}
@@ -1671,7 +1671,8 @@ img {
 
 }
 #footer-main {
-	background: lighten( rgba( $imb-primary, 1 ), 0% );
+	background: $imb-third;
+	// background: lighten( rgba( $imb-primary, 1 ), 0% );
 	// background: lighten( rgba( $tiana-black, .6 ), 0% );
 
 	// text-align: center;
@@ -1705,7 +1706,7 @@ img {
 					width: 100px;
 					height: 100px;
 					border-radius: 50%;
-					background-color: $imb-secondary;
+					background-color: $imb-primary;
 
 					@media ( max-width: 800px ) {
 						margin-bottom: 2rem;
