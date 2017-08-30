@@ -6186,9 +6186,8 @@ img {
     .below-blog-block-1 .wrapper .icon-content figure:hover {
       opacity: .5; }
     .below-blog-block-1 .wrapper .icon-content figure .item-headline {
-      font-size: 1.5rem;
-      color: #FFFFFF;
-      text-shadow: 2px 2px 10px black;
+      font-size: 2rem;
+      color: #740001;
       text-align: center; }
 
 /*=====  End of Home page style END  ======*/
@@ -7003,6 +7002,8 @@ img {
     height: 100px;
     border-radius: 50%;
     background-color: #740001; }
+    #footer-main .widget-footer-container .footer-icon-block .content .icon:hover {
+      background-color: #cc0000; }
     @media (max-width: 800px) {
       #footer-main .widget-footer-container .footer-icon-block .content .icon {
         margin-bottom: 2rem; } }
@@ -7011,10 +7012,10 @@ img {
       margin-left: 3.5rem; }
     #footer-main .widget-footer-container .footer-icon-block .content .icon .fa-envelope {
       margin-top: 2rem;
-      margin-left: 2.2rem; }
+      margin-left: 2rem; }
     #footer-main .widget-footer-container .footer-icon-block .content .icon .fa-home {
       margin-top: 2rem;
-      margin-left: 2.5rem; }
+      margin-left: 2.2rem; }
   #footer-main .widget-footer-container .footer-icon-block .content .text-only {
     color: #EEEEEE; }
     #footer-main .widget-footer-container .footer-icon-block .content .text-only p {

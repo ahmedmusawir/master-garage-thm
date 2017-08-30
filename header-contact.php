@@ -52,7 +52,7 @@
 		<div class="navbar-container">
 			<nav class="navbar navbar-inverse" role="navigation">
 	
-	  		  <div class="container">
+	  		  <div class="container-fluid">
 
 			    <!-- Brand and toggle get grouped for better mobile display -->
 			    <div class="navbar-header">

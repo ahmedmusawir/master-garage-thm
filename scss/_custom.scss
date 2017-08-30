@@ -490,9 +490,9 @@ img {
 					opacity: .5;
 				}
 				.item-headline {
-					font-size: 1.5rem;
-					color: $white;
-					text-shadow: 2px 2px 10px black;
+					font-size: 2rem;
+					color: $imb-primary;
+					// text-shadow: 2px 2px 10px black;
 					text-align: center;
 				}		
 			}
@@ -1707,6 +1707,10 @@ img {
 					height: 100px;
 					border-radius: 50%;
 					background-color: $imb-primary;
+					
+					&:hover {
+						background-color: darken( red, 10% );
+					}					
 
 					@media ( max-width: 800px ) {
 						margin-bottom: 2rem;
@@ -1720,11 +1724,11 @@ img {
 					}
 					.fa-envelope {
 						margin-top: 2rem;
-						margin-left: 2.2rem;	
+						margin-left: 2rem;	
 					}
 					.fa-home {
 						margin-top: 2rem;
-						margin-left: 2.5rem;	
+						margin-left: 2.2rem;	
 					}
 					
 				}
