@@ -778,6 +778,16 @@ img {
 .single-page {
 
 	// background-color: rgba( lighten( $gray-light, 45% ), .8);
+	.gallery {
+		// Clearfix
+		@include clearfix();
+		margin: 0 auto;
+
+		.gallery-item {
+			float: left;
+			margin: 1rem;
+		}
+	}
 
 	#single-post-nav {
 

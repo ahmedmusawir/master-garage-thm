@@ -6384,6 +6384,15 @@ img {
  * Single Page w Sidebar
  *
  */
+.single-page .gallery {
+  margin: 0 auto; }
+  .single-page .gallery::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .single-page .gallery .gallery-item {
+    float: left;
+    margin: 1rem; }
 .single-page #single-post-nav h2 {
   margin-top: 1rem;
   font-size: 2rem;
