@@ -49,13 +49,25 @@ get_header('home'); ?>
 			<?php the_field('roadmap_subtext'); ?>
 		</p>
 
-		<div class="icon-content">
+		<div class="icon-content row">
 
 			<figure class="col-sm-4 col-md-4 col-md-lg">
 
 				<!-- <a class="responsive" href="<?php the_field('roadmap_left_image'); ?>" data-rel="lightbox-0" title=""> -->
 				<a class="responsive" href="<?php the_field('roadmap_left_image_link'); ?>" >
-					<img class="img-responsive center-block img-left wow bounceInLeft" src="<?php the_field('roadmap_left_image'); ?>" data-wow-duration="1s" data-wow-delay="0s" alt="">
+					<!-- <img class="img-responsive center-block img-left wow bounceInLeft" src="<?php the_field('roadmap_left_image'); ?>" data-wow-duration="1s" data-wow-delay="0s" alt=""> -->
+					<?php 
+
+						$image = get_field('roadmap_left_image');
+						$size = 'roadmap-size'; // (thumbnail, medium, large, full or custom size)
+
+						if( $image ) {
+
+							echo wp_get_attachment_image( $image, $size );
+
+						}
+
+					?>				
 				</a>
 				<article class="text-content"><br>
 
@@ -72,7 +84,19 @@ get_header('home'); ?>
 
 				<!-- <a class="responsive" href="<?php the_field('roadmap_middle_image'); ?>" data-rel="lightbox-0" title=""> -->
 				<a class="responsive" href="<?php the_field('roadmap_middle_image_link'); ?>" >
-					<img class="img-responsive center-block img-middle wow zoomIn" src="<?php the_field('roadmap_middle_image'); ?>" data-wow-duration="1s" data-wow-delay="0s" alt="">
+					<!-- <img class="img-responsive center-block img-middle wow zoomIn" src="<?php the_field('roadmap_middle_image'); ?>" data-wow-duration="1s" data-wow-delay="0s" alt=""> -->
+					<?php 
+
+						$image = get_field('roadmap_middle_image');
+						$size = 'roadmap-size'; // (thumbnail, medium, large, full or custom size)
+
+						if( $image ) {
+
+							echo wp_get_attachment_image( $image, $size );
+
+						}
+
+					?>				
 				</a>
 				<article class="text-content"><br>
 
@@ -88,7 +112,19 @@ get_header('home'); ?>
 			<figure class="col-sm-4 col-md-4 col-md-lg">
 				<!-- <a class="responsive" href="<?php the_field('roadmap_right_image'); ?>" data-rel="lightbox-0" title=""> -->
 				<a class="responsive" href="<?php the_field('roadmap_right_image_link'); ?>" >
-					<img class="img-responsive center-block img-right wow bounceInRight" src="<?php the_field('roadmap_right_image'); ?>" data-wow-duration="1s" data-wow-delay="0s" alt="">
+					<!-- <img class="img-responsive center-block img-right wow bounceInRight" src="<?php the_field('roadmap_right_image'); ?>" data-wow-duration="1s" data-wow-delay="0s" alt=""> -->
+					<?php 
+
+						$image = get_field('roadmap_right_image');
+						$size = 'roadmap-size'; // (thumbnail, medium, large, full or custom size)
+
+						if( $image ) {
+
+							echo wp_get_attachment_image( $image, $size );
+
+						}
+
+					?>				
 				</a>
 				<article class="text-content"><br>
 
@@ -148,7 +184,7 @@ get_header('home'); ?>
 					<figure class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
 						
 						<a class="responsive" href="<?php the_post_thumbnail_url( 'full' ); ?> " data-rel="lightbox-0" title="">
-							<?php the_post_thumbnail('medium', array('class' => 'img-responsive center-block')); ?>
+							<?php the_post_thumbnail('blog-size', array('class' => 'img-responsive center-block')); ?>
 							<h5 class="item-headline"><?php the_title(); ?></h5>	
 						</a>	
 

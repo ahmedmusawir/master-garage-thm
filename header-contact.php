@@ -68,7 +68,7 @@
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse navbar-ex1-collapse">
 					
-					<ul class="header-social pull-right">
+					<ul class="header-social pull-right hide">
 						<li><a target="_blank" href="https://www.facebook.com/mybestbod/?ref=bookmarks"><i class="fa fa-facebook fa-2x"></i></a></li>				
 						<li><a target="_blank" href="https://www.instagram.com/mybestbod_fit/"><i class="fa fa-instagram fa-2x"></i></a></li>				
 						<li><a target="_blank" href="https://pinterest.com/mybestbodever/"><i class="fa fa-pinterest fa-2x"></i></a></li>				

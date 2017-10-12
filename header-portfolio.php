@@ -135,7 +135,8 @@
 
 			<section class="dr-nia-single-post-header">
 		
-				<h1><?php wp_title(); ?></h1>
+				<!-- <h1><?php wp_title(); ?></h1> -->
+				<h1>» GALLERY</h1>
 				
 			</section>
 
@@ -143,7 +144,8 @@
 
 			<section class="dr-nia-page-header">
 		
-				<h1><?php wp_title(); ?></h1>
+				<!-- <h1><?php wp_title(); ?></h1> -->
+				<h1>» GALLERY</h1>
 				
 			</section>
 

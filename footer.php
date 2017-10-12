@@ -21,7 +21,7 @@
 				
 				<div class="row">
 
-					<article class="img-box col-md-4">
+					<article class="img-box col-md-3">
 
 						<aside id="nav_menu-2" class="widget-footer-container widget_nav_menu">
 
@@ -50,7 +50,7 @@
 
 					</article>
 		 
-					<article class="img-box col-md-4">
+					<article class="img-box col-md-5">
 
 						<aside id="nav_menu-2" class="widget-footer-container widget_nav_menu">
 

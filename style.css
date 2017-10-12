@@ -5973,6 +5973,9 @@ body {
  * Bootstrap Navigation
  *
  */
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: transparent; }
+
 .navbar-container {
   overflow-y: hidden; }
 
@@ -6020,6 +6023,9 @@ body {
         background-color: #4d4d4d; }
   .navbar #menu-menu-1 {
     padding-top: 1rem; }
+    @media (max-width: 1220px) {
+      .navbar #menu-menu-1 {
+        padding-top: 3rem; } }
     .navbar #menu-menu-1 li:hover {
       background-color: transparent; }
     .navbar #menu-menu-1 li a {
@@ -6030,9 +6036,10 @@ body {
         color: #EEEEEE;
         background-color: #740001;
         border-radius: 50px; }
-      @media (max-width: 1300px) {
+      @media (min-width: 768px) and (max-width: 1000px) {
         .navbar #menu-menu-1 li a {
-          font-size: 1.5rem; } }
+          font-size: 1rem;
+          font-weight: 700; } }
     .navbar #menu-menu-1 .current-menu-item a {
       color: #EEEEEE;
       background-color: #740001;
@@ -6240,9 +6247,9 @@ img {
  *
  */
 .dr-nia-page-header {
-  border: 1px solid #3D3935;
+  border: 1px solid #9d9d9d;
   min-height: 200px;
-  background: url("/wp-content/uploads/2016/10/page-header-2000-B.jpg");
+  background: url("/wp-content/uploads/2017/10/garage-page-header-img-300x300.jpg");
   box-shadow: 1px 1px 100px #777777;
   margin-bottom: 5rem; }
   .dr-nia-page-header h1 {
@@ -6253,9 +6260,9 @@ img {
     color: #eeeeee; }
 
 .dr-nia-single-post-header {
-  border: 1px solid #3D3935;
+  border: 1px solid #9d9d9d;
   min-height: 200px;
-  background: url("/wp-content/uploads/2016/10/page-header-2000-B.jpg");
+  background: url("/wp-content/uploads/2017/10/garage-page-header-img-300x300.jpg");
   box-shadow: 1px 1px 100px #777777;
   margin-bottom: 5rem; }
   .dr-nia-single-post-header h1 {

@@ -136,6 +136,9 @@ body {
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
     // background-color: $alyssa-gray;
 }
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: transparent;
+}
 
 .navbar-container {
 	overflow-y: hidden;
@@ -228,6 +231,12 @@ body {
 
 	#menu-menu-1 {
 		padding-top: 1rem;
+		@media (max-width: 1220px) {
+			padding-top: 3rem;
+		}	
+		// @media (max-width: 767px) {
+		// 	padding-top: 3rem;
+		// }	
 
 		li {
 
@@ -247,9 +256,10 @@ body {
 					border-radius: 50px;
 				}
 
-				@media ( max-width: 1300px ) {
-					font-size: 1.5rem;
-				}
+				@media (min-width: 768px) and (max-width: 1000px) {
+					font-size: 1rem;
+					font-weight: 700;
+				}				
 			}
 		}
 
@@ -584,10 +594,11 @@ img {
  *
  */
 .dr-nia-page-header {
-	border: 1px solid $imb-third;
+	border: 1px solid lighten( $gray-light, 15% );
 
 	min-height: 200px;
-	background: url('/wp-content/uploads/2016/10/page-header-2000-B.jpg');
+	background: url('/wp-content/uploads/2017/10/garage-page-header-img-300x300.jpg');
+	// background: url('/wp-content/uploads/2017/09/congruent_pentagon-dark.jpg');
 	// background: url('/wp-content/uploads/2016/10/page-header-2000.jpg');
 	box-shadow: 1px 1px 100px $gray-light;
 
@@ -604,11 +615,13 @@ img {
 }
 
 .dr-nia-single-post-header {
-	border: 1px solid $imb-third;
+	border: 1px solid lighten( $gray-light, 15% );
 
 
 	min-height: 200px;
-	background: url('/wp-content/uploads/2016/10/page-header-2000-B.jpg');
+	background: url('/wp-content/uploads/2017/10/garage-page-header-img-300x300.jpg');
+	// background: url('/wp-content/uploads/2017/09/congruent_pentagon-dark.jpg');
+	// background: url('/wp-content/uploads/2017/09/page-header-1920x250.jpg');
 	// background: url('/wp-content/uploads/2016/10/page-header-2000.jpg');
 	box-shadow: 1px 1px 100px $gray-light;
 

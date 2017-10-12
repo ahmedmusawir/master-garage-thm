@@ -69,7 +69,7 @@
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse navbar-ex1-collapse">
 					
-					<ul class="header-social pull-right">
+					<ul class="header-social pull-right hide">
 						<li><a target="_blank" href="<?php the_field('navigation_social_link_1'); ?>"><i class="fa <?php the_field('navigation_social_icon_1'); ?> fa-2x"></i></a></li>				
 						<li><a target="_blank" href="<?php the_field('navigation_social_link_2'); ?>"><i class="fa <?php the_field('navigation_social_icon_2'); ?> fa-2x"></i></a></li>				
 						<li><a target="_blank" href="<?php the_field('navigation_social_link_3'); ?>"><i class="fa <?php the_field('navigation_social_icon_3'); ?> fa-2x"></i></a></li>				
